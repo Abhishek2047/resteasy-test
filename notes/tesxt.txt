@@ -1,0 +1,42 @@
+we can send data in three ways as part of the http request
+1:
+  uri
+2:
+  header
+3:
+  body 
+  
+ using uri :
+ 			we can send the data using uri in three ways
+ 			1: querry parameter 
+ 			2: path parameter(template parameter)
+ 			3: matrix parameter 
+ 			
+ 			querry param:
+ 					*	when the data is optional then we go for querry param because it does not take part in identifying 
+ 						the resource by matching uri with resource path 
+ 					*   mulivalues are possible
+ 					*   can appear only at the end of uri
+ 					*  	difficult to remember the syntax
+ 					*   difficult for end user to understand
+ 					*   not easily bookmarkable 
+ 					*   scoped to the whole uri (global) 
+ 					
+ 					
+ 			path param :
+ 					* when data is mandatory then we sholud go for path parameter because it takes part in matching the 
+ 					  uri with resource path
+ 					* multi value are not possible
+ 					* can appear at any place as part of the uri
+ 					* easy to remember syntax
+ 					* easy for end user to access 
+ 					* data send as part of the path parameter is scoped to the whole uri(global)
+ 			
+ 			matrix param :
+ 					* when we want to add additonal information/data to a particular path paramter/path segment then we go for matrix parameter
+ 					* these are optional
+ 					* multi values are possible
+ 					* appears with the path parameters only
+ 					* scoped to the path parameter
+ 					
+ 					  		 
